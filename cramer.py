@@ -9,7 +9,11 @@ tn2 = input("inserisci il secondo termine noto: ")
 determinante = a1*b2 - a2*b1
 determinantex = tn1*b2 - tn2*b1
 determinantey = a1*tn2 - a2*tn1
+determinante = determinante*1.0
+determinantex = determinantex*1.0
+determinantey = determinantey*1.0
 x = determinantex/determinante
 y = determinantey/determinante
 print "La x è", x
 print "La y è", y
+
