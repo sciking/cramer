@@ -14,12 +14,19 @@ determinantey = a1*tn2 - a2*tn1
 #determinantex = determinantex*1.0
 #determinantey = determinantey*1.0
 if determinantex == int(determinantex):
-	x = determinantex/determinante
+	try:
+		x = determinantex/determinante
+	except ZeroDivisionError:
+		print "Il sistema è indeterminato o impossibile"
+		exit()
 else:
 	x = str(determinantex) + "/" + str(determinante)
 if determinantex == int(determinantex):
 	y = str(determinantey) + "/" + str(determinante)
 else:
-	y = determinantey/determinante
+	try:
+		y = determinantey/determinante
+	except ZeroDivisionError:
+		print "Il sistema è indeterminato o impossibile"
 print "La x è", x
 print "La y è", y
