@@ -28,5 +28,6 @@ else:
 		y = determinantey/determinante
 	except ZeroDivisionError:
 		print "Il sistema è indeterminato o impossibile"
+		exit()
 print "La x è", x
 print "La y è", y
